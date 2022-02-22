@@ -28,8 +28,9 @@ function App () {
     </div>
   );
 
+//Função para adicionar novo Item
   function adicionarNovoItem() {
-    if (novoItem.length <= 0) {
+    if (novoItem.length <= 0) { //If usado para não deixar adicionar tarefa vazia
       return;
     }
 
@@ -37,6 +38,7 @@ function App () {
     setNovoItem("");
   }
 
+//Função para deletar o item
   function deletarItem(index) {
     let tmpArray = [...lista];
     tmpArray.splice(index, 1);
